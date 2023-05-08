@@ -1,0 +1,72 @@
+#piano {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	height: 300px;
+	margin: 0 auto;
+	max-width: 800px;
+}
+.key {
+	border: 1px solid #000;
+	height: 80px;
+	position: relative;
+}
+.white {
+	background-color: #fff;
+	width: calc(100% / 7);
+}
+.black {
+	background-color: #000;
+	height: 50%;
+	left: -25%;
+	width: calc(100% / 14);
+	z-index: 1;
+}
+.black:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 60%;
+	background-color: #000;
+	z-index: -1;
+}
+#C {
+	width: calc(100% / 14);
+}
+#C# {
+	margin-left: -5%;
+}
+#D {
+	margin-left: -5%;
+}
+#D# {
+	margin-left: -5%;
+}
+#E {
+	margin-left: -5%;
+}
+#F {
+	margin-left: -5%;
+}
+#F# {
+	margin-left: -5%;
+}
+#G {
+	margin-left: -5%;
+}
+#G# {
+	margin-left: -5%;
+}
+#A {
+	margin-left: -5%;
+}
+#A# {
+	margin-left: -5%;
+}
+#B {
+	margin-left: -5%;
+}
